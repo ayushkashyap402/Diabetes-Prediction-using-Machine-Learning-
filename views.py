@@ -10,7 +10,7 @@ def home(request):
 def predict(request):
     return render(request, 'predict.html')
 def result(request):
-    data = pd.read_csv(r'C:\Users\ayush\Downloads\diabetes.csv')
+    data = pd.read_csv(r'C:\Users\Downloads\diabetes.csv')
 
     X = data.drop('Outcome', axis=1)
     Y = data['Outcome']
